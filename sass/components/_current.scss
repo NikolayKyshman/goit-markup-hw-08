@@ -1,0 +1,14 @@
+.current {
+  color: var(--logo-and-active-color);
+  position: relative;
+  &::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--logo-and-active-color);
+    position: absolute;
+    left: 0;
+    bottom: -32px;
+  }
+}
