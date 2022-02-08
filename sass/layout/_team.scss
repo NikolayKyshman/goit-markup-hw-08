@@ -4,15 +4,20 @@
 
 .team__title {
   font-style: normal;
-  @include font(28px, bold, 1.18, 0.03em);
-  // @include font(36px, bold, 1.67, 0.03em);
-  text-align: center;
-  color: var(--title-color);
-
-  // margin-bottom: 50px;
-  // padding-top: 94px;
   margin-bottom: 30px;
   padding-top: 60px;
+  @include font(28px, bold, 1.18, 0.03em);
+  text-align: center;
+  color: var(--title-color);
+  @include tab {
+    margin-bottom: 30px;
+    padding-top: 60px;
+  }
+  @include desk {
+    @include font(36px, bold, 1.67, 0.03em);
+    margin-bottom: 50px;
+    padding-top: 94px;
+  }
 }
 
 .team-social__icons + .team-social__icons {
@@ -44,16 +49,41 @@
   fill: #afb1b8;
 }
 
-// .team-list {
+// @include tab {
 //   display: flex;
+//   flex-wrap: wrap;
 //   justify-content: space-between;
-//   padding-bottom: 94px;
-//   margin-bottom: 0;
 // }
-.team-list__item + .team-list__item {
-  margin-left: 30px;
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 60px;
+  margin-bottom: 0;
+  @include tab {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+  }
+  @include desk {
+    padding-bottom: 94px;
+  }
 }
-
+.team-list__item + .team-list__item {
+  @include desk {
+    margin-left: 30px;
+  }
+}
+.team-list__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+// .team-list {
+//   @include desk {
+//     padding-bottom: 94px;
+//   }
+// }
 .team-social {
   display: flex;
   justify-content: center;
@@ -67,11 +97,25 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--first-color);
+  @include tab {
+    max-width: 354px;
+    max-height: 536px;
+  }
+  @include desk {
+    width: calc(100% / 4 - 30px);
+    max-width: 354px;
+    max-height: 536px;
+  }
 }
 
 .team-name-profil {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
+
+  @include desk {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 .team-list__name {
