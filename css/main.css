@@ -479,7 +479,7 @@ body {
 }
 
 .specifics {
-  max-width: 450px;
+  width: 450px;
   height: 120px;
   background-color: #f5f4fa;
   text-align: center;
@@ -493,13 +493,13 @@ body {
 
 @media screen and (min-width: 768px) {
   .specifics {
-    max-width: 354px;
+    width: 354px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .specifics {
-    max-width: 270px;
+    width: 270px;
   }
 }
 
@@ -528,7 +528,14 @@ body {
   width: 270px;
 }
 
-@media screen and (min-width: 768px) {
+.about__list {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  flex-wrap: wrap;
+}
+
+.about__list {
   display: flex;
   margin-right: auto;
   margin-left: auto;
