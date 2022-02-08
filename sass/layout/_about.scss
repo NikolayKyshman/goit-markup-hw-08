@@ -4,17 +4,31 @@
   // display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
+  @include desk {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    display: flex;
+  }
 }
 
 .specifics {
-  width: 270px;
+  // width: 270px;
+  max-width: 450px;
   height: 120px;
   background-color: #f5f4fa;
   text-align: center;
   padding-top: 25px;
   padding-bottom: 25px;
+  padding-right: 0;
+  padding-left: 0;
   margin-bottom: 30px;
   border-radius: 4px;
+  @include tab {
+    max-width: 354px;
+  }
+  @include desk {
+    max-width: 270px;
+  }
 }
 
 .specifics__icons {
@@ -48,3 +62,9 @@
 //   margin-left: auto;
 //   justify-content: space-between;
 // }
+@include tab {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: space-between;
+}

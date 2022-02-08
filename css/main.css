@@ -470,15 +470,37 @@ body {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .about {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    display: flex;
+  }
+}
+
 .specifics {
-  width: 270px;
+  max-width: 450px;
   height: 120px;
   background-color: #f5f4fa;
   text-align: center;
   padding-top: 25px;
   padding-bottom: 25px;
+  padding-right: 0;
+  padding-left: 0;
   margin-bottom: 30px;
   border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .specifics {
+    max-width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .specifics {
+    max-width: 270px;
+  }
 }
 
 .specifics__icons {
@@ -504,6 +526,13 @@ body {
   letter-spacing: 0.03em;
   color: var(--secondary-color);
   width: 270px;
+}
+
+@media screen and (min-width: 768px) {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: space-between;
 }
 
 .basic {
