@@ -1,27 +1,65 @@
 .costumer__title {
   font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.17;
+
+  @include font(28px, bold, 1.18, 0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
 
   color: var(--title-color);
-
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  @include desk {
+    @include font(36px, bold, 1.17, 0.03em);
+    margin-bottom: 50px;
+  }
 }
 
 .container__customers {
-  padding: 94px 15px;
+  margin: 0 auto;
+  padding: 60px 15px;
+  @include desk {
+    padding: 94px 15px;
+  }
+}
+
+.costumer__list:nth-child(5n) {
+  margin-bottom: 0;
+}
+.costumer__list:nth-child(6n) {
+  margin-bottom: 0;
+}
+
+.costumer__list:nth-child(4n) {
+  @include tab {
+    margin-bottom: 0;
+  }
+}
+
+.costumer__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+
+  width: calc(100% / 2 - 30px);
+  @include tab {
+    width: calc(100% / 3 - 30px);
+  }
+  @include desk {
+    width: calc(100% / 6 - 30px);
+    margin-bottom: 0;
+  }
 }
 
 .costumer__lists {
-  display: inline-flex;
-  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .costumer__list + .costumer__list {
-  margin-left: 30px;
+  @include desk {
+    margin-left: 30px;
+  }
 }
 
 .costumer__icons {
@@ -31,10 +69,22 @@
 
 .costumer__link {
   display: flex;
-  width: 170px;
+  flex-wrap: wrap;
   height: 92px;
+  width: 210px;
+  @include tel {
+    height: 92px;
+  }
+  @include tab {
+    width: 226px;
+  }
+  @include desk {
+    width: 170px;
+  }
+
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  // overflow: auto;
 
   justify-content: center;
   align-items: center;
