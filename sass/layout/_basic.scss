@@ -1,15 +1,12 @@
 .basic {
-  display: flex;
+  display: none;
   padding-top: 0;
   padding-bottom: 94px;
 }
 .basic__title {
   font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.17;
+  @include font(36px, bold, 1.17, 0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--title-color);
 
   padding-bottom: 50px;
@@ -41,12 +38,9 @@
   padding: 27px 0px 27px 0px;
   background: rgba(47, 48, 58, 0.8);
 
+  @include font(14px, bold, 1.14, 0.03em);
   font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
   text-align: center;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 
   color: var(--first-color);
