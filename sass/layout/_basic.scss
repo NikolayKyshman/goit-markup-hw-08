@@ -2,6 +2,9 @@
   display: none;
   padding-top: 0;
   padding-bottom: 94px;
+  @include desk {
+    display: flex;
+  }
 }
 .basic__title {
   font-style: normal;

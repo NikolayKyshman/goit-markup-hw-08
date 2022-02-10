@@ -161,6 +161,9 @@
     width: 358px;
     display: flex;
   }
+  @include tab {
+    max-width: 450px;
+  }
   // добавляю версію тел
   width: 100%;
   max-width: 450px;
