@@ -9,6 +9,9 @@
     background-color: var(--logo-and-active-color);
     position: absolute;
     left: 0;
-    bottom: -32px;
+    bottom: -28px;
+    @include desk {
+      bottom: -32px;
+    }
   }
 }

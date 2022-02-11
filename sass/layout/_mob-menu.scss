@@ -1,0 +1,20 @@
+.mob-menu {
+  margin-left: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  @include tab {
+    display: none;
+  }
+}
+
+.mob-menu-open {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.mob-icons {
+  width: 24px;
+  height: 16px;
+  margin: 12px 8px;
+}
