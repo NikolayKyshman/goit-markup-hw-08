@@ -46,22 +46,63 @@
                             +380961111111</a></li>
                     </ul>
                 </div>
-                <div class="mob-menu">
-                    <button type="button" class="mob-menu-open">
+                <!-- <div class="mob-menu"> -->
+                    <button type="button" class="mob-menu-open" data-menu-open>
                         <svg class="mob-icons" widh="24" height="16">
                             <use href="./images/icons.svg.svg#icon-mob-menu"></use>
                         </svg>
                     </button>
-                </div>
-            </div>
-            <div class="mobile-menu">
-                <button type="button" class="mobile-close">
-                    <svg class="mob-icons" widh="19" height="19">
+                <!-- </div> -->
+            <!-- </div> -->
+            <div class="mob-menu is-hidden" data-menu>
+                <div class="container">
+                    <div class="mob-menu-top">
+                <button type="button" class="mobile-close" data-menu-close>
+                    <svg class="mobile-icons" widh="19" height="19">
                         <use href="./images/icons.svg.svg#icon-mobile-close"></use>
                     </svg>
                 </button>
+                <ul class="mob-menu__list list">
+                    <li class="mob-menu__item"><a class="link mob-menu__link " href="">Студия</a></li>
+                    <li class="mob-menu__item"><a class="link mob-menu__link" href="portfolio.html">Портфолио</a></li>
+                    <li class="mob-menu__item"><a class="link mob-menu__link" href="">Контакты</a></li>
+                </ul>
+                </div>
+                <div class="mob-menu-bottom">
+                <div class="mob-conection">
+                    <ul class="list mob-conection__list">
+                        <li class="mob-conection__item">
+                            <a class="link mob-conection__item mob-conection__tel" href="tel:+380961111111">
+                                +380961111111</a>
+                        </li>
+                        <li class="mob-conection__item">
+                            <a class="link mob-conection__item mob-conection__mail" href="mailto:info@devstudio.com">
+                                info@devstudio.com</a>
+                        </li>
+                    </ul>
+                    <ul class="list mob-menu-social">
+                        <li class="mob-menu-social__item">
+                            <a class="link mob-menu-social__link" href="instagramm.com" target="_blank" rel="noopener noreferrer">
+                                Instagram</a>
+                        </li>
+                        <li class="mob-menu-social__item">
+                            <a class="link mob-menu-social__link" href="twitter.com" target="_blank" rel="noopener noreferrer">
+                                Twitter</a>
+                        </li>
+                        <li class="mob-menu-social__item">
+                            <a class="link mob-menu-social__link" href="facebook.com" target="_blank" rel="noopener noreferrer">
+                                Facebook</a>
+                        </li>
+                        <li class="mob-menu-social__item">
+                            <a class="link mob-menu-social__link" href="linkedin.com" target="_blank" rel="noopener noreferrer">
+                                LinkedIn</a>
+                        </li>
+                    </ul>
             </div>
-        </header> 
+            </div>
+            </div>
+        </div>
+        </header>
     <!-- <main> -->
        
             <!-- hero -->
@@ -519,5 +560,6 @@
             </div>
         </div>
         <script src="./js/modal.js"></script>
+        <script src="./js/mob-menu.js"></script>
     </body>
 </html>
