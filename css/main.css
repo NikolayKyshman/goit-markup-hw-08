@@ -1061,19 +1061,20 @@ body {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer__container {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .footer__container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: row;
   }
 }
 
@@ -1220,6 +1221,12 @@ body {
   flex-direction: column;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-input__wrap {
+    display: flex;
+  }
+}
+
 .footer-input__mail {
   width: 100%;
   max-width: 450px;
@@ -1240,17 +1247,17 @@ body {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-input__mail {
+    width: 450px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer-input__mail {
     margin-bottom: 0;
     width: 358px;
     display: flex;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .footer-input__mail {
-    max-width: 450px;
   }
 }
 
@@ -1288,6 +1295,32 @@ body {
 
 .footer-input__form-btn:hover, .footer-input__form-btn:focus {
   background: #188ce8;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-pozition {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-pozition {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-input {
+    display: inline;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-input {
+    display: flex;
+  }
 }
 
 .button {

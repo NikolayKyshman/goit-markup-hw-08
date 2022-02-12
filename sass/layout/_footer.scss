@@ -5,16 +5,18 @@
 }
 
 .footer__container {
+  @include tab {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
   @include desk {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
   }
-  @include tab {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
+
   // display: flex;
   // justify-content: center;
   // align-items: center;
@@ -152,18 +154,20 @@
   // добавляю версію тел
   flex-direction: column;
   @include desk {
+    display: flex;
   }
 }
 
 .footer-input__mail {
+  @include tab {
+    width: 450px;
+  }
   @include desk {
     margin-bottom: 0;
     width: 358px;
     display: flex;
   }
-  @include tab {
-    max-width: 450px;
-  }
+
   // добавляю версію тел
   width: 100%;
   max-width: 450px;
@@ -221,5 +225,25 @@
   &:hover,
   &:focus {
     background: #188ce8;
+  }
+}
+
+.footer-pozition {
+  @include desk {
+    display: flex;
+  }
+  @include tab {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.footer-input {
+  @include tab {
+    display: inline;
+    flex-direction: column;
+  }
+  @include desk {
+    display: flex;
   }
 }
