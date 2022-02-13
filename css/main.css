@@ -548,6 +548,7 @@ body {
   padding-bottom: 48px;
   padding-left: 40px;
   transition: left 500ms, visibility 500ms;
+  z-index: 1;
 }
 
 .mob-menu .container {
